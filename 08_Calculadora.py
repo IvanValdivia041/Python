@@ -34,8 +34,11 @@ match opcion_calculadora:
         print(f"la Multiplicacion es: {resultado}")
     case 4:
         print("Operacion de Divicion")
-        resultado=numero1/numero2
-        print(f"la Divicion  es: {resultado}")
+        if numero2!=0:
+            resultado=numero1/numero2
+            print(f"la Divicion es: {resultado}")
+        else:
+            print("Error: no se puede dividir entre cero")    
     case _:
         print("Error, seleccione nuevamente")
 print("Gracias por usar mi calculadora")
